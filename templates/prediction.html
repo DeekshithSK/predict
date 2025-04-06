@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction Result</title>
+    <style>
+        body {
+            background-image: url(heartphoto.jpg);
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .container {
+            opacity: 100%;
+            background-color: rgba(132, 174, 178, 0.457);
+            
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+           
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background: #007bff;
+            color: white;
+        }
+        td {
+            background: #f9f9f9;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            color: white;
+            background: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="heartphoto.jpg" alt="">
+      
+        <h1>Prediction Result</h1>
+        <h2>Submitted Data</h2>
+        {{ prediction_results | safe }}
+
+        <a href="{{ url_for('download_file', filename=csv_filename) }}" class="btn">Download Results (CSV)</a>
+        <br><br>
+   
+        <a href="{{ url_for('home') }}" class="btn">Make Another Prediction</a>
+                <div id="predictionResult"></div>
+    </div>
+    <script>
+            document.getElementById("predictionForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                
+                let formData = new URLSearchParams(new FormData(this)).toString();
+    
+                fetch("/predict", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("predictionResult").innerHTML = data;
+                })
+                .catch(error => console.error("Error:", error));
+            });
+        </script>
+    </div>
+</body>
+</html>

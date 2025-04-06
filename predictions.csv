@@ -1,0 +1,105 @@
+Age,Sex,Chest Pain Type,Resting Blood Pressure,Cholesterol,Fasting Blood Sugar,Resting ECG,Max Heart Rate,Exercise Induced Angina,Oldpeak,ST Segment Slope,Number of Major Vessels,Thalassemia,Prediction
+23,0,4,45,200,1,2,70,1,1,3,3,2,Heart Disease
+56,1,3,20,20,0,1,80,0,0,1,0,1,Heart Disease
+23,0,1,456,67,1,2,80,1,0,1,2,3,No Heart Disease
+23,0,1,456,67,1,2,80,1,0,1,2,3,No Heart Disease
+23,0,1,456,67,1,2,80,1,0,1,2,3,No Heart Disease
+23,0,1,456,67,1,2,80,1,0,1,2,3,No Heart Disease
+23,0,1,456,67,1,2,80,1,0,1,2,3,No Heart Disease
+23,0,1,200,120,0,1,90,1,0,2,3,3,Heart Disease
+23,1,2,20,120,1,0,80,0,2,3,4,3,No Heart Disease
+22,1,2,200,120,1,2,90,1,2,3,4,3,No Heart Disease
+56,1,4,120,200,0,1,90,1,2,3,4,3,No Heart Disease
+56,1,1,200,120,0,1,90,1,0,2,3,3,No Heart Disease
+34,1,1,200,120,0,1,90,1,0.0,2,3,3,No Heart Disease
+23,0,1,200,120,0,1,90,1,0.0,2,3,3,Heart Disease
+23,0,1,200,120,0,1,90,1,0.0,2,3,3,Heart Disease
+23,1,2,230,120,1,1,90,1,1.0,2,3,3,No Heart Disease
+23,0,3,120,120,1,2,90,1,1.0,2,3,3,Heart Disease
+23,0,2,120,230,1,1,90,0,1.0,2,3,3,Heart Disease
+23,0,2,200,120,0,1,90,1,0.0,2,3,3,Heart Disease
+45,1,1,150,90,0,0,120,0,0.0,1,1,1,Heart Disease
+56,1,4,120,200,0,1,90,1,2.0,3,4,3,No Heart Disease
+56,1,4,120,200,0,1,90,1,2.0,3,4,3,No Heart Disease
+56,1,4,120,200,0,1,90,1,2.0,3,4,3,No Heart Disease
+23,1,4,120,100,1,0,90,1,1.0,3,4,1,No Heart Disease
+60,1,4,600,200,1,2,90,1,1.0,3,4,3,No Heart Disease
+23,0,4,45,200,1,2,70,1,1.0,3,3,2,Heart Disease
+23,0,3,120,120,1,1,89,0,0.0,1,2,2,Heart Disease
+12,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+12,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+12,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+12,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+12,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+12,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+12,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+23,0,1,120,130,0,0,90,0,1.0,2,4,2,No Heart Disease
+23,0,1,120,130,0,0,90,0,1.0,2,4,2,No Heart Disease
+23,0,1,120,130,0,0,90,0,1.0,2,4,2,No Heart Disease
+23,0,2,120,130,0,0,90,0,1.0,1,4,3,No Heart Disease
+23,0,1,120,120,0,0,90,0,1.0,1,1,1,No Heart Disease
+23,1,1,120,120,1,1,90,1,1.0,1,1,1,No Heart Disease
+43,0,4,120,120,0,0,90,0,1.0,1,3,3,No Heart Disease
+23,0,1,120,120,0,0,90,0,1.0,1,4,3,No Heart Disease
+23,0,1,120,120,1,1,90,0,1.0,1,1,1,No Heart Disease
+23,1,1,120,120,1,1,100,1,1.0,1,1,1,No Heart Disease
+23,0,1,120,120,0,2,80,1,2.0,1,2,3,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+23,0,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+1,1,1,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+23,0,4,45,200,1,2,70,1,1.0,3,3,2,Heart Disease
+20,1,2,115,80,0,1,90,0,0.0,2,2,2,Heart Disease
+1,1,2,1,1,1,1,1,1,1.0,1,1,1,No Heart Disease
+23,1,2,120,120,0,1,400,0,3.0,3,2,2,Heart Disease
+23,0,3,120,120,1,1,90,1,2.0,2,3,2,No Heart Disease
+23,0,4,45,200,1,2,70,1,1.0,3,3,2,Heart Disease
+23,0,2,67,100,1,2,200,1,1.0,3,3,3,Heart Disease
+23,1,3,45,100,1,1,300,1,3.0,3,3,2,Heart Disease
+23,1,2,200,200,1,1,200,1,1.0,2,2,3,Heart Disease
+34,1,2,169,200,1,1,90,1,3.0,2,3,3,No Heart Disease
+56,1,3,40,35,0,1,80,0,0.0,1,0,1,Heart Disease
+23,0,1,120,120,0,0,130,0,1.0,2,1,1,Heart Disease
+23,0,1,120,120,0,0,130,0,1.0,2,0,1,Heart Disease
+23,0,1,60,60,0,0,130,0,1.0,2,0,1,Heart Disease
+23,0,1,200,120,1,2,90,1,2.0,3,4,3,No Heart Disease
+56,1,4,120,200,0,0,90,1,2.0,3,4,3,No Heart Disease
+56,1,4,120,200,0,0,90,1,2.0,3,4,2,No Heart Disease
+23,0,1,200,120,1,2,90,1,2.0,3,4,3,No Heart Disease
+23,0,1,120,120,1,2,90,1,2.0,3,4,3,No Heart Disease
+56,1,3,40,35,0,1,80,0,0.0,1,0,1,Heart Disease
+23,0,4,45,200,1,2,70,1,1.0,3,3,2,Heart Disease
+40,0,4,60,120,0,0,180,0,2.0,2,1,1,Heart Disease

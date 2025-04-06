@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <style>
+        #backgroundImage {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.8);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            overflow: auto;
+            background-image: url('heartphoto.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            opacity: 100%;
+            background-color: rgba(132, 174, 178, 0.457);
+            
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+           
+          
+        }
+        #head{
+            opacity: 100%;
+            text-align: center;
+            color: #000000;
+            margin-top: 450px;
+            margin-bottom: -280px;
+        }
+        form {
+            opacity: 100%;
+            padding-left: 32.5%;
+            text-align: center;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: 900;
+
+            margin-top: 10px;
+            color: #000000;
+        }
+        input, select, button {
+            padding: 8px;
+            margin-top: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            border-radius: 20px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            cursor: grab;
+            margin-top: 15px;
+            padding: 12px;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #943126;
+            
+        }
+        #predictionResult {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            opacity: 100%;
+            background-color: rgba(132, 174, 178, 0.457);
+            
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://etimg.etb2bimg.com/photo/94525801.cms" 
+         id="backgroundImage" 
+         alt="Medical background">
+
+    <div class="container">
+        <h1 id="head">Heart Disease Prediction</h1>
+        <form id="predictionForm" style="margin-top: 300px;" action="/Users/deekshithsk/Desktop/new file for hack/Project_AR/Projectheart123/templates/prediction.html">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="sex">Sex:</label>
+<select id="sex" name="sex"  required>
+  <option value="" disabled selected hidden></option>
+  <option value="0">Female</option>
+  <option value="1">Male</option>
+</select>
+            
+            <label for="cp">Chest Pain Type:</label>
+<select id="cp" name="cp" required>
+    <option value="" disabled selected hidden></option>
+  <option value="1">Typical Angina</option>
+  <option value="2">Atypical Angina</option>
+  <option value="3">Non-Anginal Pain</option>
+  <option value="4">Asymptomatic</option>
+</select>
+            
+            <label for="trestbps">Resting Blood Pressure:</label>
+            <input type="number" id="trestbps" name="trestbps" min="30" max="200" required>
+            
+            <label for="chol">Cholesterol:</label>
+            <input type="number" id="chol" name="chol" min="30" max="600" required>
+            
+            <label for="fbs">Fasting Blood Sugar:</label>
+<select id="fbs" name="fbs" required>
+  <option value="" disabled selected hidden></option>
+  <option value="0">Non-Daibetic</option>
+  <option value="1">Daibetic</option>
+</select>
+            
+<label for="restecg">Resting ECG:</label>
+<select id="restecg" name="restecg" required>
+  <option value="" disabled selected hidden></option>
+  <option value="0">Normal ECG</option>
+  <option value="1">ST-T wave Abnormalities</option>
+  <option value="2">Left Ventricular Hypertrophy (LVH)</option>
+</select>
+            
+            <label for="thalach">Max Heart Rate:</label>
+            <input type="number" id="thalach" name="thalach" min="25" max="300" required>
+            
+            <label for="exang">Exercise Induced Angina:</label>
+<select id="exang" name="exang" required>
+  <option value="" disabled selected hidden></option>
+  <option value="0">No</option>
+  <option value="1">Yes</option>
+</select>
+            
+            <label for="oldpeak">Oldpeak:</label>
+            <input type="number" id="oldpeak" name="oldpeak" step="0.1" min="0" max="10"  required>
+            
+            <label for="slope">ST Segment Slope:</label>
+<select id="slope" name="slope" required>
+  <option value="" disabled selected hidden></option>
+  <option value="1">Upsloping</option>
+  <option value="2">Flat</option>
+  <option value="3">Downsloping</option>
+</select>
+            
+            <label for="ca">Number of Major Vessels Coloured By Fluoroscopy:</label>
+            <input type="number" id="ca" name="ca" min="0" max="4" required>
+            
+            <label for="thal">Thalassemia:</label>
+<select id="thal" name="thal" required>
+  <option value="" disabled selected hidden></option>
+  <option value="1">Normal</option>
+  <option value="2">Fixed Defect</option>
+  <option value="3">Reversible Defect</option>
+</select>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="predictionResult"></div>
+    </div>
+
+    <script>
+        document.getElementById("predictionForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let formData = new URLSearchParams(new FormData(this)).toString();
+
+            fetch("/predict", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("predictionResult").innerHTML = data;
+            })
+            .catch(error => console.error("Error:", error));
+        });
+    </script>
+</body>
+</html>
